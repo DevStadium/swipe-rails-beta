@@ -54,6 +54,8 @@ GEM
     activerecord (7.0.7)
       activemodel (= 7.0.7)
       activesupport (= 7.0.7)
+    activerecord-import (1.5.0)
+      activerecord (>= 4.2)
     activestorage (7.0.7)
       actionpack (= 7.0.7)
       activejob (= 7.0.7)
@@ -96,6 +98,8 @@ GEM
       warden (~> 1.2.3)
     erubi (1.12.0)
     erubis (2.7.0)
+    faker (3.2.1)
+      i18n (>= 1.8.11, < 2)
     globalid (1.1.0)
       activesupport (>= 5.0)
     haml (6.1.2)
@@ -255,10 +259,12 @@ PLATFORMS
   arm64-darwin-21
 
 DEPENDENCIES
+  activerecord-import
   bootsnap
   capybara
   debug
   devise
+  faker
   haml-rails
   html2haml
   importmap-rails

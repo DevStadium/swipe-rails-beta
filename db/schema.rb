@@ -10,9 +10,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_08_19_155547) do
+ActiveRecord::Schema[7.0].define(version: 2023_08_22_001257) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "accounts", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.string "account_type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_accounts_on_user_id"
+  end
+
+  create_table "invoices", force: :cascade do |t|
+    t.bigint "account_id"
+    t.datetime "due_at"
+    t.float "total_amount"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["account_id"], name: "index_invoices_on_account_id"
+  end
+
+  create_table "transactions", force: :cascade do |t|
+    t.bigint "account_id"
+    t.bigint "invoice_id"
+    t.float "amount"
+    t.string "status"
+    t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["account_id"], name: "index_transactions_on_account_id"
+    t.index ["invoice_id"], name: "index_transactions_on_invoice_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -26,4 +55,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_19_155547) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "accounts", "users"
+  add_foreign_key "invoices", "accounts"
+  add_foreign_key "transactions", "accounts"
+  add_foreign_key "transactions", "invoices"
 end

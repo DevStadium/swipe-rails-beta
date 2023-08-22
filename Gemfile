@@ -74,7 +74,9 @@ group :test do
   gem "webdrivers"
 end
 
+gem 'faker'
 gem 'webpacker'
 gem 'devise'
 gem 'haml-rails'
 gem 'html2haml'
+gem 'activerecord-import'
