@@ -1,0 +1,125 @@
+.bg-gray-900
+  %main
+    / Hero section
+    .relative.isolate.overflow-hidden
+      %svg.absolute.inset-0.-z-10.h-full.w-full{"aria-hidden" => "true", :class => "stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"}
+        %defs
+          %pattern#983e3e4c-de6d-4c3f-8d64-b9761d1534cc{:height => "200", :patternunits => "userSpaceOnUse", :width => "200", :x => "50%", :y => "-1"}
+            %path{:d => "M.5 200V.5H200", :fill => "none"}
+        %svg.overflow-visible{:class => "fill-gray-800/20", :x => "50%", :y => "-1"}
+          %path{:d => "M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z", "stroke-width" => "0"}
+        %rect{:fill => "url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)", :height => "100%", "stroke-width" => "0", :width => "100%"}
+      .absolute.top-10.-z-10.transform-gpu.blur-3xl.lg:left-48{"aria-hidden" => "true", :class => "left-[calc(50%-4rem)] sm:left-[calc(50%-18rem)] lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]"}
+        .bg-gradient-to-r.opacity-20{:class => "aspect-[1108/632] w-[69.25rem] from-[#80caff] to-[#4f46e5]", :style => "clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"}
+      .mx-auto.max-w-7xl.px-6.pb-24.pt-10.sm:pb-40.lg:flex.lg:px-8.lg:pt-40
+        .mx-auto.max-w-2xl.flex-shrink-0.lg:mx-0.lg:max-w-xl.lg:pt-8
+          %img.h-11{:alt => "Your Company", :src => "https://tailwindui.com/img/logos/mark.svg?color=orange&shade=500"}/
+          .mt-24.sm:mt-32.lg:mt-16
+            %a.inline-flex.space-x-6{:href => "#"}
+              %span.rounded-full.px-3.py-1.text-sm.font-semibold.leading-6.text-orange-400.ring-1.ring-inset{:class => "bg-orange-500/10 ring-orange-500/20"} Latest updates
+              %span.inline-flex.items-center.space-x-2.text-sm.font-medium.leading-6.text-gray-300
+                %span Just shipped v1.0
+                %svg.h-5.w-5.text-gray-500{"aria-hidden" => "true", :fill => "currentColor", :viewbox => "0 0 20 20"}
+                  %path{"clip-rule" => "evenodd", :d => "M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z", "fill-rule" => "evenodd"}
+          %h1.mt-10.text-4xl.font-bold.tracking-tight.text-white.sm:text-6xl Swipe with confidence
+          %p.mt-6.text-lg.leading-8.text-gray-300 Simplified payments for complex businesses
+          .mt-10.flex.items-center.gap-x-6
+            %a.rounded-md.bg-orange-500.text-sm.font-semibold.text-white.shadow-sm.hover:bg-orange-400.focus-visible:outline.focus-visible:outline-2.focus-visible:outline-offset-2.focus-visible:outline-orange-400{:class => "px-3.5 py-2.5", :href => "users/sign_up"} Get started
+        .mx-auto.mt-16.flex.max-w-2xl.sm:mt-24.lg:ml-10.lg:mr-0.lg:mt-0.lg:max-w-none.lg:flex-none.xl:ml-32
+          .max-w-3xl.flex-none.sm:max-w-5xl.lg:max-w-none
+            %img.rounded-md.shadow-2xl.ring-1{:alt => "App screenshot", :class => "w-[76rem] bg-white/5 ring-white/10", :height => "1442", :src => "https://tailwindui.com/img/component-images/dark-project-app-screenshot.png", :width => "2432"}/
+    .mx-auto.mt-32.max-w-7xl.px-6.sm:mt-56.lg:px-8
+      .mx-auto.max-w-2xl.text-center
+        %h2.text-base.font-semibold.leading-7.text-orange-400 Get paid faster
+        %p.mt-2.text-3xl.font-bold.tracking-tight.text-white.sm:text-4xl Everything you need to get paid quickly
+      .mx-auto.mt-16.max-w-2xl.sm:mt-20.lg:mt-24.lg:max-w-none
+        %dl.grid.max-w-xl.grid-cols-1.gap-x-8.gap-y-16.lg:max-w-none.lg:grid-cols-3
+          .flex.flex-col
+            %dt.text-base.font-semibold.leading-7.text-white
+              .mb-6.flex.h-10.w-10.items-center.justify-center.rounded-lg.bg-orange-500
+                %svg.h-6.w-6.text-white{"aria-hidden" => "true", :fill => "none", :stroke => "currentColor", "stroke-width" => "1.5", :viewbox => "0 0 24 24"}
+                  %path{:d => "M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z", "stroke-linecap" => "round", "stroke-linejoin" => "round"}
+              Swipe transactions
+            %dd.mt-1.flex.flex-auto.flex-col.text-base.leading-7.text-gray-300
+              %p.flex-auto We provide the machine, you provide the product
+              %p.mt-6
+                %a.text-sm.font-semibold.leading-6.text-orange-400{:href => "#"}
+                  Learn more
+                  %span{"aria-hidden" => "true"} →
+          .flex.flex-col
+            %dt.text-base.font-semibold.leading-7.text-white
+              .mb-6.flex.h-10.w-10.items-center.justify-center.rounded-lg.bg-orange-500
+                %svg.h-6.w-6.text-white{"aria-hidden" => "true", :fill => "none", :stroke => "currentColor", "stroke-width" => "1.5", :viewbox => "0 0 24 24"}
+                  %path{:d => "M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z", "stroke-linecap" => "round", "stroke-linejoin" => "round"}
+              Analytics Delivered
+            %dd.mt-1.flex.flex-auto.flex-col.text-base.leading-7.text-gray-300
+              %p.flex-auto The best in class data analytics to get you what you need to grow your revenue
+              %p.mt-6
+                %a.text-sm.font-semibold.leading-6.text-orange-400{:href => "#"}
+                  Learn more
+                  %span{"aria-hidden" => "true"} →
+          .flex.flex-col
+            %dt.text-base.font-semibold.leading-7.text-white
+              .mb-6.flex.h-10.w-10.items-center.justify-center.rounded-lg.bg-orange-500
+                %svg.h-6.w-6.text-white{"aria-hidden" => "true", :fill => "none", :stroke => "currentColor", "stroke-width" => "1.5", :viewbox => "0 0 24 24"}
+                  %path{:d => "M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z", "stroke-linecap" => "round", "stroke-linejoin" => "round"}
+              Minimal fees, maximum profit
+            %dd.mt-1.flex.flex-auto.flex-col.text-base.leading-7.text-gray-300
+              %p.flex-auto We aren't a real site, so we have best in class fees for our users
+              %p.mt-6
+                %a.text-sm.font-semibold.leading-6.text-orange-400{:href => "#"}
+                  Learn more
+                  %span{"aria-hidden" => "true"} →
+    / Feature section
+    .mt-32.sm:mt-56
+      .mx-auto.max-w-7xl.px-6.lg:px-8
+        .mx-auto.max-w-2xl.sm:text-center
+          %h2.text-base.font-semibold.leading-7.text-orange-400 Everything you need
+          %p.mt-2.text-3xl.font-bold.tracking-tight.text-white.sm:text-4xl No compliance? No problem.
+          %p.mt-6.text-lg.leading-8.text-gray-300 We work with any industry and any problem-set.
+      .relative.overflow-hidden.pt-16
+        .mx-auto.max-w-7xl.px-6.lg:px-8
+          %img.rounded-xl.shadow-2xl.ring-1{:alt => "App screenshot", :class => "mb-[-12%] ring-white/10", :height => "1442", :src => "https://tailwindui.com/img/component-images/dark-project-app-screenshot.png", :width => "2432"}/
+          .relative{"aria-hidden" => "true"}
+            .absolute.-inset-x-20.bottom-0.bg-gradient-to-t.from-gray-900{:class => "pt-[7%]"}
+
+    .mx-auto.mt-32.max-w-7xl.px-6.sm:mt-56.lg:px-8
+      .mx-auto.max-w-2xl.lg:mx-0.lg:max-w-xl
+        %h2.text-base.font-semibold.leading-8.text-orange-400 Our track record
+        %p.mt-2.text-3xl.font-bold.tracking-tight.text-white.sm:text-4xl Trusted by thousands of developers worldwide
+        %p.mt-6.text-lg.leading-8.text-gray-300 Payments has never been so easy. Trust SWIPE with your most critical payment infrastructure
+      %dl.mx-auto.mt-16.grid.max-w-2xl.grid-cols-1.gap-x-8.gap-y-10.text-white.sm:mt-20.sm:grid-cols-2.sm:gap-y-16.lg:mx-0.lg:max-w-none.lg:grid-cols-4
+        .flex.flex-col.gap-y-3.border-l.pl-6{:class => "border-white/10"}
+          %dt.text-sm.leading-6 Developers on the platform
+          %dd.order-first.text-3xl.font-semibold.tracking-tight 8,000+
+        .flex.flex-col.gap-y-3.border-l.pl-6{:class => "border-white/10"}
+          %dt.text-sm.leading-6 Daily requests
+          %dd.order-first.text-3xl.font-semibold.tracking-tight 900m+
+        .flex.flex-col.gap-y-3.border-l.pl-6{:class => "border-white/10"}
+          %dt.text-sm.leading-6 Uptime guarantee
+          %dd.order-first.text-3xl.font-semibold.tracking-tight 99.9%
+        .flex.flex-col.gap-y-3.border-l.pl-6{:class => "border-white/10"}
+          %dt.text-sm.leading-6 Payment volume processed
+          %dd.order-first.text-3xl.font-semibold.tracking-tight 12m
+    / CTA section
+    .relative.isolate.mt-32.px-6.py-32.sm:mt-56.sm:py-40.lg:px-8
+      %svg.absolute.inset-0.-z-10.h-full.w-full{"aria-hidden" => "true", :class => "stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"}
+        %defs
+          %pattern#1d4240dd-898f-445f-932d-e2872fd12de3{:height => "200", :patternunits => "userSpaceOnUse", :width => "200", :x => "50%", :y => "0"}
+            %path{:d => "M.5 200V.5H200", :fill => "none"}
+        %svg.overflow-visible{:class => "fill-gray-800/20", :x => "50%", :y => "0"}
+          %path{:d => "M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z", "stroke-width" => "0"}
+        %rect{:fill => "url(#1d4240dd-898f-445f-932d-e2872fd12de3)", :height => "100%", "stroke-width" => "0", :width => "100%"}
+      .absolute.inset-x-0.top-10.-z-10.flex.transform-gpu.justify-center.overflow-hidden.blur-3xl{"aria-hidden" => "true"}
+        .flex-none.bg-gradient-to-r.opacity-20{:class => "aspect-[1108/632] w-[69.25rem] from-[#80caff] to-[#4f46e5]", :style => "clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"}
+      .mx-auto.max-w-2xl.text-center
+        %h2.text-3xl.font-bold.tracking-tight.text-white.sm:text-4xl
+          Boost your business.
+          %br>/
+          Start using our app today.
+        %p.mx-auto.mt-6.max-w-xl.text-lg.leading-8.text-gray-300 Sign up to get started
+        .mt-10.flex.items-center.justify-center.gap-x-6
+          %a.rounded-md.bg-white.text-sm.font-semibold.text-gray-900.shadow-sm.hover:bg-gray-100.focus-visible:outline.focus-visible:outline-2.focus-visible:outline-offset-2.focus-visible:outline-white{:class => "px-3.5 py-2.5", :href => "#"} Get started
+          %a.text-sm.font-semibold.leading-6.text-white{:href => "#"}
+            Learn more
+            %span{"aria-hidden" => "true"} →
